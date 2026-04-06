@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v2",
+  "system": "You are an expert summarizer. Be concise, accurate, and preserve all key facts. Never add information not present in the original text.",
+  "template": "Summarize the following text in exactly {{maxSentences}} sentences. Focus on the main argument and key supporting facts. Do not include opinions or interpretations.\n\nText:\n{{text}}"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v3-structured",
+  "system": "You are a professional editor who creates structured summaries.",
+  "template": "Create a summary of the following text. Format your response as:\n- **Main point**: one sentence\n- **Key details**: 2-3 bullet points\n- **Significance**: one sentence\n\nText:\n{{text}}"
+}

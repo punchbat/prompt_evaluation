@@ -1,0 +1,155 @@
+{
+  "name": "summarization",
+  "cases": [
+    {
+      "id": "space-jwst",
+      "variables": {
+        "text": "The James Webb Space Telescope (JWST) has discovered the most distant galaxy ever observed, dating back to just 300 million years after the Big Bang. The galaxy, named JADES-GS-z14-0, was found using the telescope's Near-Infrared Camera. Scientists were surprised by its brightness, suggesting it contains a large number of young stars. This discovery challenges existing models of early galaxy formation, which predicted that galaxies this early would be much smaller and dimmer. The research team published their findings in Nature Astronomy.",
+        "maxSentences": "2"
+      },
+      "expected": "JWST discovered most distant galaxy JADES-GS-z14-0 dating 300 million years after Big Bang. Discovery challenges early galaxy formation models due to unexpected brightness.",
+      "criteria": [
+        "mentions JWST and the galaxy name",
+        "includes the timeframe (300 million years after Big Bang)",
+        "mentions the challenge to existing models",
+        "concise — no more than 2 sentences",
+        "no hallucinated information"
+      ]
+    },
+    {
+      "id": "health-fasting",
+      "variables": {
+        "text": "A new study published in The Lancet found that intermittent fasting (IF) may not be as effective for weight loss as previously thought. Researchers tracked 500 participants over 12 months, comparing IF with traditional calorie restriction. Both groups lost similar amounts of weight, but the IF group reported higher rates of hunger and irritability. However, the IF group showed slightly better improvements in insulin sensitivity. The authors concluded that IF offers no significant advantage over standard dieting for weight loss, though it may have metabolic benefits.",
+        "maxSentences": "3"
+      },
+      "expected": "Lancet study compared intermittent fasting with calorie restriction in 500 participants over 12 months. Weight loss was similar but IF group experienced more hunger while showing better insulin sensitivity. Researchers concluded IF has no weight loss advantage but may offer metabolic benefits.",
+      "criteria": [
+        "mentions The Lancet study",
+        "includes sample size and duration",
+        "covers both weight loss and metabolic findings",
+        "balanced — presents both pros and cons",
+        "no more than 3 sentences"
+      ]
+    },
+    {
+      "id": "business-tesla",
+      "variables": {
+        "text": "Tesla announced a 20% price cut across its entire vehicle lineup in the US and Europe, effective immediately. CEO Elon Musk stated the move is aimed at increasing market share amid growing competition from Chinese EV manufacturers like BYD and NIO. Wall Street reacted negatively, with Tesla's stock dropping 8% in after-hours trading. Analysts warn that the price cuts could significantly impact profit margins, which were already under pressure. However, some investors see this as a strategic long-term play to dominate the EV market before competitors can scale up production.",
+        "maxSentences": "2"
+      },
+      "expected": "Tesla cut prices 20% across all US and European vehicles to compete with Chinese EV makers BYD and NIO. Stock dropped 8% as analysts worry about margins though some see it as strategic long-term positioning.",
+      "criteria": [
+        "mentions the 20% price cut",
+        "includes competition context (Chinese EV makers)",
+        "covers market reaction (stock drop)",
+        "concise — no more than 2 sentences",
+        "no hallucinated information"
+      ]
+    },
+    {
+      "id": "tech-ai-regulation",
+      "variables": {
+        "text": "The European Union has officially enacted the AI Act, the world's first comprehensive legal framework for artificial intelligence. The law categorizes AI systems by risk level: unacceptable risk (banned outright, such as social scoring), high risk (subject to strict requirements, including medical devices and hiring tools), and low risk (transparency obligations only). Companies have 6 months to phase out banned systems and 24 months to comply with high-risk requirements. Penalties for non-compliance can reach up to 35 million euros or 7% of global annual revenue. Tech giants including Google, Meta, and Microsoft have publicly committed to compliance, though critics argue the enforcement mechanisms remain unclear.",
+        "maxSentences": "3"
+      },
+      "expected": "EU enacted AI Act, first comprehensive AI regulation, categorizing systems by risk level. Companies face up to 35 million euro fines with 6-24 month compliance timelines. Major tech companies committed to compliance despite enforcement concerns.",
+      "criteria": [
+        "mentions EU AI Act as first comprehensive AI law",
+        "explains risk categories",
+        "includes penalty amounts",
+        "mentions compliance timeline",
+        "no more than 3 sentences"
+      ]
+    },
+    {
+      "id": "science-climate",
+      "variables": {
+        "text": "A groundbreaking study by MIT researchers has revealed that the Atlantic Meridional Overturning Circulation (AMOC), a critical ocean current system that regulates climate in Europe and North America, is weakening faster than any climate model predicted. Using 40 years of satellite data combined with deep-sea sensor readings, the team found that AMOC has slowed by 23% since 1980. If this trend continues, Northern Europe could experience average temperature drops of 5-10°C within decades, paradoxically occurring alongside global warming. The study also warns of severe disruptions to monsoon patterns in Africa and Asia. Lead author Dr. Sarah Chen called it 'the most significant climate finding in a decade' and urged immediate policy action.",
+        "maxSentences": "3"
+      },
+      "expected": "MIT study found Atlantic ocean current AMOC has weakened 23% since 1980, faster than models predicted. Continued decline could drop Northern European temperatures 5-10°C and disrupt global monsoon patterns. Researchers call it the most significant climate finding in a decade.",
+      "criteria": [
+        "mentions AMOC and the 23% slowdown",
+        "includes potential consequences (temperature drop, monsoons)",
+        "mentions the paradox with global warming",
+        "attributes to MIT researchers",
+        "no more than 3 sentences"
+      ]
+    },
+    {
+      "id": "tech-quantum",
+      "variables": {
+        "text": "Google's quantum computing division announced that its latest processor, Willow, has achieved 'quantum supremacy' for a practical problem for the first time. The 105-qubit chip solved a complex molecular simulation for drug discovery in 4 minutes — a task that would take the world's fastest supercomputer approximately 47 years. The breakthrough could accelerate pharmaceutical research by enabling rapid simulation of protein folding and drug interactions. However, the processor requires cooling to near absolute zero (-273°C) and has an error rate of 0.1%, which still limits broader applications. IBM and Microsoft have congratulated Google while announcing their own competing timelines for similar achievements.",
+        "maxSentences": "2"
+      },
+      "expected": "Google's 105-qubit Willow processor achieved quantum supremacy by solving a drug discovery simulation in 4 minutes versus 47 years on a supercomputer. Limitations include extreme cooling requirements and 0.1% error rate.",
+      "criteria": [
+        "mentions Willow processor and qubit count",
+        "includes the speed comparison (4 min vs 47 years)",
+        "mentions drug discovery application",
+        "notes limitations",
+        "no more than 2 sentences"
+      ]
+    },
+    {
+      "id": "economy-housing",
+      "variables": {
+        "text": "The U.S. Federal Reserve released a report showing that housing affordability has reached its worst level since records began in 1971. The median home price now stands at $420,000, requiring a household income of at least $115,000 to afford — nearly double the actual median household income of $63,000. Mortgage rates have stabilized around 7.2%, but remain significantly higher than the 3% rates seen in 2021. First-time buyers now represent only 24% of purchases, down from 34% a decade ago. The report recommends increasing housing supply through zoning reform and federal incentives for builders, estimating the country needs 4.5 million additional homes to meet demand.",
+        "maxSentences": "3"
+      },
+      "expected": "Federal Reserve reports worst housing affordability since 1971, with median home price at $420,000 requiring $115,000 income versus actual median of $63,000. First-time buyers dropped to 24% of purchases with mortgage rates at 7.2%. Report recommends zoning reform and estimates 4.5 million homes needed.",
+      "criteria": [
+        "mentions Fed report and worst since 1971",
+        "includes price and income gap numbers",
+        "mentions first-time buyer decline",
+        "includes recommended solutions",
+        "no more than 3 sentences"
+      ]
+    },
+    {
+      "id": "sports-olympics",
+      "variables": {
+        "text": "The International Olympic Committee (IOC) has announced that the 2036 Summer Olympics will be held in New Delhi, India, marking the first time the Games will be hosted in South Asia. India beat out bids from Istanbul, Jakarta, and Mexico City. The Indian government has pledged $12 billion in infrastructure investment, including a new 100,000-seat stadium and a complete overhaul of Delhi's public transportation system. Critics have raised concerns about air quality, extreme summer heat exceeding 45°C, and the displacement of low-income communities for construction. The IOC stated that India's proposal included comprehensive heat mitigation plans, including scheduling all outdoor events before 9 AM or after 6 PM. Prime Minister's office called it 'a historic moment that will showcase India's emergence as a global sporting nation.'",
+        "maxSentences": "2"
+      },
+      "expected": "IOC awarded 2036 Olympics to New Delhi, first South Asian host, with India pledging $12 billion in infrastructure. Critics cite heat and displacement concerns while organizers plan early morning and evening scheduling.",
+      "criteria": [
+        "mentions New Delhi 2036 and first South Asian Games",
+        "includes $12 billion investment figure",
+        "covers concerns (heat, displacement)",
+        "mentions heat mitigation plan",
+        "no more than 2 sentences"
+      ]
+    },
+    {
+      "id": "tech-cybersecurity",
+      "variables": {
+        "text": "A massive cybersecurity breach at United Health Group has exposed the personal medical records of 190 million Americans, making it the largest healthcare data breach in history. Hackers exploited a vulnerability in the company's claims processing system, gaining access to names, Social Security numbers, diagnoses, and prescription histories. The breach went undetected for 3 months before a routine audit flagged unusual data transfers. The FBI has attributed the attack to a state-sponsored group. United Health Group faces at least 50 class-action lawsuits and potential HIPAA fines exceeding $2 billion. The company has offered affected individuals two years of free credit monitoring and identity theft protection.",
+        "maxSentences": "2"
+      },
+      "expected": "United Health Group breach exposed 190 million Americans' medical records including SSNs and diagnoses, largest healthcare breach in history. Company faces $2 billion in potential fines and 50+ lawsuits after FBI attributed attack to state-sponsored hackers.",
+      "criteria": [
+        "mentions 190 million affected",
+        "specifies type of data exposed",
+        "mentions FBI attribution",
+        "includes financial consequences",
+        "no more than 2 sentences"
+      ]
+    },
+    {
+      "id": "science-archaeology",
+      "variables": {
+        "text": "Archaeologists in Peru have discovered an intact Inca tomb containing the remains of a high-ranking female leader, challenging long-held assumptions that Inca political power was exclusively male. The tomb, found 20 meters below the surface near Cusco, contained gold and silver artifacts, elaborate textiles, and the remains of 12 attendants — a burial style previously associated only with male rulers. Carbon dating places the burial around 1430 CE, during the rapid expansion of the Inca Empire. DNA analysis confirmed the individual was female, approximately 40-50 years old at death. The discovery, published in Science, has prompted historians to re-examine Spanish colonial records, which may have deliberately erased evidence of female political authority to align with European gender norms.",
+        "maxSentences": "3"
+      },
+      "expected": "Archaeologists found intact Inca tomb near Cusco containing a high-ranking female leader from 1430 CE, challenging assumption of exclusively male political power. Tomb included gold artifacts and 12 attendant burials, previously only seen with male rulers. Discovery prompts re-examination of Spanish colonial records that may have erased female authority.",
+      "criteria": [
+        "mentions female Inca leader discovery",
+        "includes location and date (Cusco, 1430 CE)",
+        "explains why it challenges existing assumptions",
+        "mentions the colonial records angle",
+        "no more than 3 sentences"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v6-chain-of-thought",
+  "system": "You are a meticulous analyst.",
+  "template": "Summarize the following text in {{maxSentences}} sentences.\n\nBefore writing the summary, think step by step:\n1. What is the main topic?\n2. What are the key facts?\n3. What is the conclusion or significance?\n\nThen write ONLY the final summary (no thinking steps in output).\n\nText:\n{{text}}"
+}

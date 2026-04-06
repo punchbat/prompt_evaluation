@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v1",
+  "system": "You are a helpful assistant.",
+  "template": "Summarize this text:\n\n{{text}}"
+}

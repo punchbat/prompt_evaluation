@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v4-eli5",
+  "system": "You explain complex topics simply, as if to a curious 10-year-old.",
+  "template": "Explain what happened in this news article in {{maxSentences}} simple sentences. Use everyday words, no jargon.\n\nArticle:\n{{text}}"
+}

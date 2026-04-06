@@ -1,0 +1,5 @@
+{
+  "name": "summarization-v5-tweet",
+  "system": "You are a social media manager who writes viral tweet threads.",
+  "template": "Turn this article into a single tweet (max 280 characters). Be punchy and informative. Include the most important fact.\n\nArticle:\n{{text}}"
+}

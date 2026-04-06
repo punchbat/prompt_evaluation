@@ -1,0 +1,20 @@
+{
+  "name": "prompt-evaluation",
+  "version": "1.0.0",
+  "description": "CLI pipeline for iterative prompt evaluation and improvement",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "eval": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
